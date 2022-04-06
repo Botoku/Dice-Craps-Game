@@ -1,24 +1,24 @@
-var cwidth = 100;
-var cheight = 100;
-var dicex = 50;
-var dicey = 50;
+let cwidth = 100;
+let cheight = 100;
+let dicex = 50;
+let dicey = 50;
 
-var diceWidth = 100;
-var diceHeight = 100;
+let diceWidth = 100;
+let diceHeight = 100;
 
-var dotRad = 6;
+let dotRad = 6;
 
-var ctx;
-var dx;
-var dy;
+let ctx;
+let dx;
+let dy;
 
-var firstTurn = true;
-var point;
+let firstTurn = true;
+let point;
 
 
 function throwDice(){
 
-    var sum; //var to hold value of the sum of the two dice
+    let sum; //var to hold value of the sum of the two dice
 
     var ch = 1+Math.floor(Math.random()*6);//set ch to be random for forst die
 
@@ -83,8 +83,8 @@ function drawFace(n) {
 ctx.fillStyle = "black";
     ctx.fillRect(dx,dy,diceWidth,diceHeight);
 ctx.closePath();
-    var dotx;
-    var doty;
+    let dotx;
+    let doty;
 ctx.fillStyle ="white";
     
 
@@ -114,8 +114,8 @@ ctx.fillStyle ="white";
 }
 
 function draw1() {
-    var dotx;
-    var doty; // var for vertical and horizintal position of dot
+    let dotx;
+    let doty; // var for vertical and horizintal position of dot
     
     ctx.beginPath();
     
@@ -130,9 +130,9 @@ function draw1() {
 }
 
 function draw2() {
-    var dotx;
+    let dotx;
 
-    var doty;
+    let doty;
     
     
     ctx.beginPath();
@@ -195,8 +195,8 @@ function draw4() {
 
    function draw2mid(){
     
-    var dotx;
-    var doty;
+    let dotx;
+    let doty;
     
     ctx.beginPath();
 

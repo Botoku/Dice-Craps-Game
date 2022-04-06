@@ -11,6 +11,40 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+
     overflow: hidden;
     margin: 0;
+    background: radial-gradient(#eeaeca, #94bbe9);
+}
+.container{
+    padding-top: 5em;
+   padding-left: 3em;
+    width: 100vw;
+}
+
+.rules{
+    border: 3px solid black;
+    padding: 1em 2em;
+    max-width: 50em;
+
+}
+
+.rules h2 {
+    text-align: center;
+}
+
+canvas {
+    border: 2px dotted #342977;
+    margin: 10% 20%;
+}
+
+button{
+    padding: 1em 1.5em;
+    margin-left: 15em;
+    margin-bottom: 5em;
+}
+
+form input{
+    padding: 1em .5em;
+    font-weight: 600;
 }

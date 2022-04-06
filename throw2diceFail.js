@@ -1,21 +1,21 @@
-var cwidth = 400;
-var cheight = 300; // variables for width and height of canvas
+let cwidth = 400;
+let cheight = 300; // variables for width and height of canvas
 
-var dicex = 50;
-var dicey = 50; // variables holding vertical and horizontal position of the die
+let dicex = 50;
+let dicey = 50; // variables holding vertical and horizontal position of the die
 
-var diceWidth = 100;
-var diceHeight = 100;
+let diceWidth = 100;
+let diceHeight = 100;
 
-var dotRad = 6; //radius of a dot
+let dotRad = 6; //radius of a dot
 
-var ctx; // canvas context
+let ctx; // canvas context
 
-var dx;// var for horizontal positioning, changed for each die
+let dx;// var for horizontal positioning, changed for each die
 var dy;// var for vertical position, same for both dice
 
 function throwDice() {
-    var ch = 1+Math.floor(Math.random()*6);
+    let ch = 1+Math.floor(Math.random()*6);
     dx = dicex;
     dy = dicey;
     drawFace(ch);
@@ -40,9 +40,8 @@ function drawFace(n) {
 
     ctx.rect(dx, dy, diceWidth, diceHeight); //draws the outline of the die face
     ctx.fill();
-    
-var dotx;
-var doty;
+    let dotx;
+    let doty;
     switch(n) {  //start switch using the number of dots
         case 1:
             draw1();
@@ -70,8 +69,8 @@ var doty;
 
 }
 function draw1() {
-    var dotx;
-    var doty; // var for vertical and horizintal position of dot
+    let dotx;
+    let doty; // var for vertical and horizintal position of dot
     ctx.fillStyle = "white";
     ctx.beginPath();
 
@@ -86,9 +85,9 @@ function draw1() {
 }
 
 function draw2() {
-    var dotx;
+    let dotx;
 
-    var doty;
+    let doty;
     ctx.fillStyle = "white";
     ctx.beginPath();
 
@@ -109,8 +108,8 @@ function draw2() {
 
 
 function draw4() {
-    var dotx;
-    var doty;
+    let dotx;
+    let doty;
     ctx.fillStyle = "white";
 
     ctx.beginPath();
@@ -150,8 +149,8 @@ function draw4() {
 
    function draw2mid(){
 
-    var dotx;
-    var doty;
+    let dotx;
+    let doty;
     ctx.fillStyle = "white";
     ctx.beginPath();
 
